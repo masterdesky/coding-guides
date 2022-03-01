@@ -31,13 +31,15 @@ If we ensured the existence of the `bin` folder, we can use eg. the `g++` (in
 case of GCC) or `clang++` (in case of clang) commands to compile our simple
 example software:
 
-
+```bash
 $ g++ main.cpp -Iinclude/ -o bin/program-name
+```
 
   or similarly
 
+```bash
 $ clang++ main.cpp -Iinclude/ -o bin/program-name
-
+```
 
 (Obviously other compliers besides GCC and clang can be also used if desired.)
 
@@ -50,6 +52,11 @@ named as `include` in almost any software development project), then we have to
 be careful and pay attention that which working directory we're trying to compile
 the `.cpp` code from. (It's quite trivial if someone is familiar with the terms
 "relative path" and "absolute path".)
+- The `-o` flag tells the compiler where to link the `.o` _object files_ that
+are created during the compilation. For each source file (`.c` or `.cpp`) a
+corresponding `.o` file is created and then correctly linked at the end to create
+a single binary/executable file that contains the final compiled version of the
+software. 
 
 
 If everything goes well, we should have the following directory structure at the
