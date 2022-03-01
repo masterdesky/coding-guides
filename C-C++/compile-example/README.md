@@ -18,14 +18,14 @@ the `bin` folder should be created beforehand in this case, because the compiler
 itself cannot do this for us. Imagine a directory structure like this in this
 simple case:
 
-project/
-│
-├── bin/
-│
-├── include/
-│   └── test.hpp
-│
-└── main.cpp
+project/  
+│  
+├── bin/  
+│  
+├── include/  
+│   └── test.hpp  
+│  
+└── main.cpp  
 
 If we ensured the existence of the `bin` folder, we can use eg. the `g++` (in
 case of GCC) or `clang++` (in case of clang) commands to compile our simple
@@ -55,12 +55,12 @@ the `.cpp` code from. (It's quite trivial if someone is familiar with the terms
 If everything goes well, we should have the following directory structure at the
 end, where the `bin` folder now contains our executable file:
 
-project/
-│
-├── bin/
-│   └── program-name
-│
-├── include/
-│   └── test.hpp
-│
-└── main.cpp
+project/  
+│  
+├── bin/  
+│   └── program-name  
+│  
+├── include/  
+│   └── test.hpp  
+│  
+└── main.cpp  
