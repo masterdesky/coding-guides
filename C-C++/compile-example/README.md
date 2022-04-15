@@ -5,8 +5,8 @@ Eg. `gcc`/`g++` from the GNU Compiler Collection (GCC) or `clang`/`clang++`
 from the clang software package. If we're working with non-standard header files,
 we also have to tell the compiler that which directory it should search for these
 header files that are included in our `.c` or `.cpp` project codes. In this
-example I'm using a simple example, where we're including a `test.hpp` header
-file that resides in the `include` directory to a simple `main.cpp` code. The
+guide I'm using a simple example, where we're including a `test.hpp` header
+file (that resides in the `include` directory) in a simple `main.cpp` code. The
 same steps can be used for similar problems written in either `C` or `C++`.
 
 
